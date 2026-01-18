@@ -114,7 +114,7 @@ function generateMediaToolbar(chapterNum, media, ui) {
   if (!chapterMedia) return '';
 
   const hasPdf = !!chapterMedia.pdf;
-  const hasAudio = !!chapterMedia.audio;
+  const hasAudio = false; // Disabled - no audio files available
   const hasYoutube = !!chapterMedia.youtube;
 
   // If nothing available, return empty
@@ -168,7 +168,7 @@ function generateHomepageMediaToolbar(media, ui) {
   if (!allMedia) return '';
 
   const hasPdf = !!allMedia.pdf;
-  const hasAudio = !!allMedia.audio;
+  const hasAudio = false; // Disabled - no audio files available
   const hasYoutube = !!allMedia.youtube;
 
   if (!hasPdf && !hasAudio && !hasYoutube) return '';
@@ -229,9 +229,26 @@ function generateChapterContent(chapter, glossary, references, media, ui) {
   return html;
 }
 
-// Notes sidebar removed - keeping function stub for compatibility
+// Generate notes/definitions sidebar
 function generateNotes(glossary, references, ui) {
-  return '';
+  if (!glossary || Object.keys(glossary).length === 0) return '';
+
+  let html = `        <aside class="notes" id="notes-panel">\n`;
+  html += `            <div class="notes-head">${ui.nav.notesPanel || 'Notes & Definitions'}</div>\n`;
+  html += `            <div class="notes-empty">${ui.nav.notesEmpty || 'Click any highlighted term to see its definition.'}</div>\n`;
+
+  // Generate note blocks for each glossary term
+  Object.entries(glossary).forEach(([id, term]) => {
+    html += `            <div class="note" id="note-${id}" data-note-id="${id}">\n`;
+    html += `                <div class="note-title">${term.title}</div>\n`;
+    html += `                <div class="note-content">\n`;
+    html += `                    <p>${term.definition}</p>\n`;
+    html += `                </div>\n`;
+    html += `            </div>\n`;
+  });
+
+  html += `        </aside>\n`;
+  return html;
 }
 
 // Generate navigation sidebar for chapter page
@@ -557,6 +574,44 @@ function generateScripts() {
         }
         function toggleMediaPanel(type){const panel=document.getElementById('panel-'+type);const btn=document.querySelector('[data-panel="'+type+'"]');if(!panel||!btn)return;const isActive=panel.classList.contains('active');document.querySelectorAll('.ch-media-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.ch-media-icon').forEach(b=>b.classList.remove('active'));if(!isActive){panel.classList.add('active');btn.classList.add('active')}}
         document.querySelectorAll('.nav-link').forEach(l=>l.addEventListener('click',()=>{if(window.innerWidth<=1100)closeAll()}));
+
+        // Terms and notes functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const terms = document.querySelectorAll('.term');
+            const notes = document.querySelectorAll('.note');
+            const notesEmpty = document.querySelector('.notes-empty');
+
+            terms.forEach(term => {
+                term.addEventListener('click', function() {
+                    const noteId = this.getAttribute('data-note');
+                    const note = document.getElementById('note-' + noteId);
+
+                    if (!note) return;
+
+                    // Toggle active state on clicked term
+                    const wasActive = this.classList.contains('active');
+
+                    // Remove active from all terms and notes
+                    terms.forEach(t => t.classList.remove('active'));
+                    notes.forEach(n => n.classList.remove('active'));
+
+                    if (!wasActive) {
+                        // Activate this term and its note
+                        this.classList.add('active');
+                        note.classList.add('active');
+                        if (notesEmpty) notesEmpty.style.display = 'none';
+
+                        // Scroll note into view (for mobile)
+                        if (window.innerWidth <= 1100) {
+                            note.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }
+                    } else {
+                        // Deactivated - show empty message
+                        if (notesEmpty) notesEmpty.style.display = 'block';
+                    }
+                });
+            });
+        });
 
     </script>`;
 }
