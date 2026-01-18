@@ -2,7 +2,7 @@
 node_modules/
 
 # Build output (generated from JSON)
-dist/
+# dist/ - Commented out to allow committing static files for Cloudflare Pages
 
 # OS files
 .DS_Store
