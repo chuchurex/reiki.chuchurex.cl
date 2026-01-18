@@ -1,0 +1,51 @@
+{
+  "siteTitle": "Reiki Book",
+  "bookTitle": "Reiki - The Art of Healing",
+  "description": "A comprehensive guide to Reiki healing practice.",
+  "introduction": {
+    "title": "",
+    "content": [
+      "Welcome to the world of Reiki healing."
+    ]
+  },
+  "nav": {
+    "index": "Index",
+    "chapter": "Ch",
+    "notes": "Notes",
+    "about": "About",
+    "notesPanel": "Notes & Definitions",
+    "notesEmpty": "Click any <span class=\"term-hint\">highlighted term</span> in the text to see its definition here.",
+    "tableOfContents": "Table of Contents",
+    "previousChapter": "Previous Chapter",
+    "nextChapter": "Next Chapter",
+    "backToIndex": "Back to Index",
+    "readChapter": "Read chapter",
+    "learnMore": "Learn more"
+  },
+  "media": {
+    "downloadPdf": "Download PDF",
+    "downloadAudio": "Download MP3",
+    "listenAudio": "Listen",
+    "labelAudio": "MP3",
+    "labelPdf": "PDF",
+    "labelYoutube": "YouTube"
+  },
+  "footer": {
+    "draft": "First Edition",
+    "date": "2026",
+    "attribution": "",
+    "originalSessions": "",
+    "derivedFrom": "© 2026 Reiki Book"
+  },
+  "meta": {
+    "version": "v1.0 · January 2026"
+  },
+  "footerVersion": "",
+  "disclaimer": {
+    "title": "About This Work",
+    "text1": "This book is a comprehensive guide to Reiki healing practice.",
+    "text2": "Created with care to share the wisdom of Reiki.",
+    "text3": "",
+    "text3b": ""
+  }
+}

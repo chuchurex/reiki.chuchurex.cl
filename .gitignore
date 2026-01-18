@@ -1,0 +1,81 @@
+# Dependencies
+node_modules/
+
+# Build output (generated from JSON)
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===========================================
+# SECRETS & CREDENTIALS (NEVER COMMIT)
+# ===========================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+*.pem
+*.key
+id_rsa*
+client_secret*.json
+
+# ===========================================
+# PRIVATE CONTEXT (NEVER COMMIT)
+# ===========================================
+# Single file with all private info
+private-context.md
+CREDENTIALS_BACKUP.md
+YOUTUBE_BACKUP.md
+
+# Legacy context files (keep for backwards compatibility)
+context*.md
+CONTEXT*.md
+CONTEXTO*.md
+DOCUMENTACION*.md
+EVOLUCION*.md
+RESUMEN*.md
+TAREA_*.md
+CORRESPONDENCIA*.md
+INSTRUCCIONES*.md
+.claude-context.md
+docs/CONTEXT.md
+docs/AYUDA-CONTEXTUAL.md
+inbox/
+
+# ===========================================
+# MEDIA FILES (stored on CDN or external storage)
+# ===========================================
+audiobook/
+books/
+video/
+*.mp3
+*.mp4
+*.pdf
+
+# ===========================================
+# TEMPORARY & BACKUP FILES
+# ===========================================
+backups/
+*.zip
+*.tar.gz
+*.bak
+*~
+
+# ===========================================
+# OLD/LEGACY FILES
+# ===========================================
+/mnt/
+
+

@@ -1,0 +1,39 @@
+{
+  "id": "about",
+  "title": "About This Project",
+  "subtitle": "",
+  "sections": [
+    {
+      "id": "what",
+      "title": "",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A gentle introduction to the teachings of The Law of One, presented as eternal story. The original material, received by Don Elkins, Carla L. Rueckert and Jim McCarty between 1981 and 1984, is available for free at <a href=\"https://www.llresearch.org\" target=\"_blank\">llresearch.org</a>."
+        },
+        {
+          "type": "paragraph",
+          "text": "This work was created by <a href=\"https://chuchurex.cl\" target=\"_blank\">Carlos Martínez</a> with the help of Claude."
+        }
+      ]
+    },
+    {
+      "id": "ai-disclosure",
+      "title": "AI Assistance Disclosure",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This project was created with assistance from an AI (Claude by Anthropic). While every effort has been made to maintain accuracy and fidelity to the original material, AI-generated content may contain inaccuracies, inconsistencies, or misinterpretations."
+        },
+        {
+          "type": "paragraph",
+          "text": "This work should be used only as a complementary study tool. For authoritative understanding, always consult the original Ra Material."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "updated": "",
+    "madeWith": ""
+  }
+}

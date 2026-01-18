@@ -1,0 +1,39 @@
+{
+  "id": "about",
+  "title": "Acerca de Este Proyecto",
+  "subtitle": "",
+  "sections": [
+    {
+      "id": "what",
+      "title": "",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Una introducción gentil a las enseñanzas de La Ley del Uno, presentada como historia eterna. El material original, recibido por Don Elkins, Carla L. Rueckert y Jim McCarty entre 1981 y 1984, está disponible gratuitamente en <a href=\"https://www.llresearch.org\" target=\"_blank\">llresearch.org</a>."
+        },
+        {
+          "type": "paragraph",
+          "text": "Este trabajo fue realizado por <a href=\"https://chuchurex.cl\" target=\"_blank\">Carlos Martínez</a> con la ayuda de Claude."
+        }
+      ]
+    },
+    {
+      "id": "ai-disclosure",
+      "title": "Divulgación de Asistencia de IA",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Este proyecto fue creado con asistencia de una IA (Claude de Anthropic). Aunque se ha hecho todo el esfuerzo por mantener la precisión y fidelidad al material original, el contenido generado por IA puede contener inexactitudes, inconsistencias o malinterpretaciones."
+        },
+        {
+          "type": "paragraph",
+          "text": "Este trabajo debe usarse solo como herramienta de estudio complementaria. Para una comprensión autorizada, siempre consulte el Material Ra original."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "updated": "",
+    "madeWith": ""
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "reiki-book",
+  "version": "1.0.0",
+  "description": "Reiki Book - Digital Edition",
+  "scripts": {
+    "sass:watch": "sass --watch scss/main.scss:dist/css/main.css",
+    "sass:build": "sass scss/main.scss:dist/css/main.css --style=compressed",
+    "serve": "live-server dist --port=3002",
+    "dev": "concurrently \"npm run sass:watch\" \"npm run serve\"",
+    "build": "npm run sass:build && node scripts/build.js",
+    "publish": "./scripts/publish.sh",
+    "translate": "node scripts/translate.js",
+    "translate:chapter": "node scripts/translate-chapter.js",
+    "build:pdf": "node scripts/build-pdf.js",
+    "publish:media": "node scripts/publish-media.js"
+  },
+  "devDependencies": {
+    "@msgpack/msgpack": "^3.1.3",
+    "basic-ftp": "^5.0.5",
+    "concurrently": "^8.2.0",
+    "dotenv": "^17.2.3",
+    "live-server": "^1.2.2",
+    "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "puppeteer": "^24.34.0"
+  }
+}

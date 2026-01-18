@@ -1,0 +1,62 @@
+{
+  "all": {
+    "audio": "/audiobook/audio/es/LA-LEY-DEL-UNO-AUDIOLIBRO-COMPLETO-TTS.mp3",
+    "pdf": "",
+    "youtube": ""
+  },
+  "1": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/01-el-uno-infinito.mp3",
+    "youtube": ""
+  },
+  "2": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/02-el-gran-viaje.mp3",
+    "youtube": ""
+  },
+  "3": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/03-el-olvido.mp3",
+    "youtube": ""
+  },
+  "4": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/04-la-historia-de-este-mundo.mp3",
+    "youtube": ""
+  },
+  "5": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/05-la-eleccion.mp3",
+    "youtube": ""
+  },
+  "6": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/06-la-cosecha.mp3",
+    "youtube": ""
+  },
+  "7": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/07-el-regalo-de-la-experiencia.mp3",
+    "youtube": ""
+  },
+  "8": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/08-lo-que-viene-despues.mp3",
+    "youtube": ""
+  },
+  "9": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/09-la-ayuda-que-te-rodea.mp3",
+    "youtube": ""
+  },
+  "10": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/10-vivir-las-ensenanzas.mp3",
+    "youtube": ""
+  },
+  "11": {
+    "pdf": "",
+    "audio": "/audiobook/audio/es-tts/11-el-misterio-permanece.mp3",
+    "youtube": ""
+  }
+}
