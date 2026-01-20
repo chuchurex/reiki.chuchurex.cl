@@ -1,18 +1,18 @@
 {
-  "name": "reiki-book",
+  "name": "@eluno/sanacion",
   "version": "1.0.0",
   "description": "Reiki Book - Digital Edition",
   "scripts": {
-    "sass:watch": "sass --watch scss/main.scss:dist/css/main.css",
-    "sass:build": "sass scss/main.scss:dist/css/main.css --style=compressed",
-    "serve": "live-server dist --port=3002",
+    "sass:watch": "sass --watch ../core/scss/main.scss:dist/css/main.css",
+    "sass:build": "sass ../core/scss/main.scss:dist/css/main.css --style=compressed",
+    "serve": "live-server dist --port=3004",
     "dev": "concurrently \"npm run sass:watch\" \"npm run serve\"",
-    "build": "npm run sass:build && node scripts/build.js",
-    "publish": "./scripts/publish.sh",
-    "translate": "node scripts/translate.js",
-    "translate:chapter": "node scripts/translate-chapter.js",
-    "build:pdf": "node scripts/build-pdf.js",
-    "publish:media": "node scripts/publish-media.js"
+    "build": "npm run sass:build && node ../core/scripts/build.js",
+    "publish": "../core/scripts/publish.sh",
+    "translate": "node ../core/scripts/translate.js",
+    "translate:chapter": "node ../core/scripts/translate-chapter.js",
+    "build:pdf": "node ../core/scripts/build-pdf.js",
+    "publish:media": "node ../core/scripts/publish-media.js"
   },
   "devDependencies": {
     "@msgpack/msgpack": "^3.1.3",
